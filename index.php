@@ -12,7 +12,7 @@ if ($conn->connect_error) {
     die("Conexion fallida: " . $conn->connect_error);
 }
 
-// Agregar nombre a la base de datos
+// Agregar nombre a la base de datosjj
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST["nombre"];
     $sql = "INSERT INTO usuarios (nombre) VALUES ('$nombre')";
