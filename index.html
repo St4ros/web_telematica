@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina Web</title>
+</head>
+<body>
+    <h1>Mi Pagina Web</h1>
+    
+    <form action="index.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <button type="submit">Agregar Nombre</button>
+    </form>
+
+    <hr>
+
+    <h2>Contenido de la Base de Datos</h2>
+    <?php include('index.php'); ?>
+</body>
+</html>
